@@ -166,7 +166,7 @@ export default class Home extends Component {
                                                     <a href="#" title="Amazing stories from around the globe">
                                                         <img width="344" height="193" src={Blog_1} alt="img"/> <span
                                                         className="vlog-format-action small">
-                                                        <i assName="fa fa-play"></i></span>
+                                                        <i className="fa fa-play"></i></span>
                                                     </a>
                                                 </div>
                                                 <div className="entry-header">
