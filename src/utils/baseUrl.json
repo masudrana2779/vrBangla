@@ -1,0 +1,9 @@
+{
+  "backendUrl": "http://comptech.solutions/api",
+  "backendImageUrl": "http://mysports.com.bd/",
+  "accessToken": "K165S6V6q4C6G7H0y9C4f5W7t5YeC6",
+  "decode": {
+    "algorithm" : "aes-256-ctr",
+    "password": "live_sports"
+  }
+}
