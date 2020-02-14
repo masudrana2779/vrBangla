@@ -9,6 +9,8 @@ import Slider_1 from "../../assets/img/slider/slider-1.jpg";
 import Slider_2 from "../../assets/img/slider/slider-2.jpg";
 import Blog_1 from "../../assets/img/featured/blog_1.jpg";
 import Blog_2 from "../../assets/img/blog/blog-2.jpg";
+import Featured from "../common/featured/featured";
+import LatestVideo from "../common/latestVideo/latestVideo";
 
 
 export default class Home extends Component {
@@ -28,7 +30,8 @@ export default class Home extends Component {
         return (
             <Fragment>
                 <div id="content" className="vlog-site-content">
-                    <div className="vlog-featured vlog-featured-1 vlog-featured-slider owl-carousel owl-theme owl-loaded owl-text-select-on">
+                    <div
+                        className="vlog-featured vlog-featured-1 vlog-featured-slider owl-carousel owl-theme owl-loaded owl-text-select-on">
                         <div className="vrFeaturedSlider_wrap">
                             <div className="vrSlider_content">
                                 <div className="vlog-cover-bg">
@@ -75,115 +78,18 @@ export default class Home extends Component {
                                             </div>
                                         </div>
                                         <div className="row vlog-cats row-eq-height ">
-                                            <article
-                                                className="vlog-lay-e vlog-cat col-lg-4 col-sm-4 col-md-4 col-xs-12 post-4 page type-page status-publish hentry">
-                                                <div className="entry-image">
-                                                    <a href="#" title="Amazing stories from around the globe">
-                                                        <img src={Blog_1} alt="img"/> <span
-                                                        className="vlog-format-action small">
-                                                        <i className="fa fa-play"></i></span>
-                                                    </a>
-                                                </div>
-                                                <div className="entry-header">
-                                                    <h2 className="entry-title h5"><a href="#">Amazing
-                                                        stories from around the globe</a></h2>
-                                                </div>
-                                                <div className="entry-meta"><span className="meta-item"><span
-                                                    className="vlog-count">6</span>videos</span>
-                                                </div>
-                                            </article>
-                                            <article
-                                                className="vlog-lay-e vlog-cat col-lg-4 col-sm-4 col-md-4 col-xs-12 post-4 page type-page status-publish hentry">
-                                                <div className="entry-image">
-                                                    <a href="#" title="Amazing stories from around the globe">
-                                                        <img width="344" height="193" src={Blog_1} alt="img"/> <span
-                                                        className="vlog-format-action small">
-                                                        <i className="fa fa-play"></i></span>
-                                                    </a>
-                                                </div>
-                                                <div className="entry-header">
-                                                    <h2 className="entry-title h5"><a href="#">Amazing
-                                                        stories from around the globe</a></h2>
-                                                </div>
-                                                <div className="entry-meta"><span className="meta-item"><span
-                                                    className="vlog-count">6</span>videos</span>
-                                                </div>
-                                            </article>
-                                            <article
-                                                className="vlog-lay-e vlog-cat col-lg-4 col-sm-4 col-md-4 col-xs-12 post-4 page type-page status-publish hentry">
-                                                <div className="entry-image">
-                                                    <a href="#" title="Amazing stories from around the globe">
-                                                        <img width="344" height="193" src={Blog_1} alt="img"/> <span
-                                                        className="vlog-format-action small">
-                                                        <i className="fa fa-play"></i></span>
-                                                    </a>
-                                                </div>
-                                                <div className="entry-header">
-                                                    <h2 className="entry-title h5"><a href="#">Amazing
-                                                        stories from around the globe</a></h2>
-                                                </div>
-                                                <div className="entry-meta"><span className="meta-item"><span
-                                                    className="vlog-count">6</span>videos</span>
-                                                </div>
-                                            </article>
-                                            <article
-                                                className="vlog-lay-e vlog-cat col-lg-4 col-sm-4 col-md-4 col-xs-12 post-4 page type-page status-publish hentry">
-                                                <div className="entry-image">
-                                                    <a href="#" title="Amazing stories from around the globe">
-                                                        <img width="344" height="193" src={Blog_1} alt="img"/> <span
-                                                        className="vlog-format-action small">
-                                                        <i className="fa fa-play"></i></span>
-                                                    </a>
-                                                </div>
-                                                <div className="entry-header">
-                                                    <h2 className="entry-title h5"><a href="#">Amazing
-                                                        stories from around the globe</a></h2>
-                                                </div>
-                                                <div className="entry-meta"><span className="meta-item"><span
-                                                    className="vlog-count">6</span>videos</span>
-                                                </div>
-                                            </article>
-                                            <article
-                                                className="vlog-lay-e vlog-cat col-lg-4 col-sm-4 col-md-4 col-xs-12 post-4 page type-page status-publish hentry">
-                                                <div className="entry-image">
-                                                    <a href="#" title="Amazing stories from around the globe">
-                                                        <img width="344" height="193" src={Blog_1} alt="img"/> <span
-                                                        className="vlog-format-action small">
-                                                        <i className="fa fa-play"></i></span>
-                                                    </a>
-                                                </div>
-                                                <div className="entry-header">
-                                                    <h2 className="entry-title h5"><a href="#">Amazing
-                                                        stories from around the globe</a></h2>
-                                                </div>
-                                                <div className="entry-meta"><span className="meta-item"><span
-                                                    className="vlog-count">6</span>videos</span>
-                                                </div>
-                                            </article>
-                                            <article
-                                                className="vlog-lay-e vlog-cat col-lg-4 col-sm-4 col-md-4 col-xs-12 post-4 page type-page status-publish hentry">
-                                                <div className="entry-image">
-                                                    <a href="#" title="Amazing stories from around the globe">
-                                                        <img width="344" height="193" src={Blog_1} alt="img"/> <span
-                                                        className="vlog-format-action small">
-                                                        <i className="fa fa-play"></i></span>
-                                                    </a>
-                                                </div>
-                                                <div className="entry-header">
-                                                    <h2 className="entry-title h5"><a href="#">Amazing
-                                                        stories from around the globe</a></h2>
-                                                </div>
-                                                <div className="entry-meta"><span className="meta-item"><span
-                                                    className="vlog-count">6</span>videos</span>
-                                                </div>
-                                            </article>
+                                            <Featured/>
+                                            <Featured/>
+                                            <Featured/>
+                                            <Featured/>
+                                            <Featured/>
+                                            <Featured/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
 
                     <div className="vlog-section vlog-no-sid vlog-bg ">
                         <div className="container">
@@ -212,7 +118,6 @@ export default class Home extends Component {
                         </div>
                     </div>
 
-
                     <div className="vlog-section">
                         <div className="container">
                             <div className="vlog-content">
@@ -228,195 +133,11 @@ export default class Home extends Component {
 
                                         <div className="row vlog-posts row-eq-height ">
 
-                                            <article
-                                                className="vlog-lay-b lay-horizontal vlog-post post-92 post type-post status-publish format-gallery has-post-thumbnail hentry category-technology tag-magazine tag-video post_format-post-format-gallery">
-                                                <div className="row">
-                                                    <div className="col-lg-6 col-md-6  col-sm-6 col-xs-12">
-                                                        <div className="entry-image">
-                                                            <a href="#"
-                                                               title="Take advantage of different weather forecasts">
-                                                                <img src={Blog_2}
-                                                                     className="attachment-vlog-lay-b size-vlog-lay-b wp-post-image"
-                                                                     alt="img"/>
-                                                                <div className="vlog-labels medium">
-                                                                    <span className="vlog-format-label">Gallery</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                            <LatestVideo/>
+                                            <LatestVideo/>
+                                            <LatestVideo/>
+                                            <LatestVideo/>
 
-                                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                        <div className="entry-header">
-                                            <span className="entry-category">
-                                                <a href="#" className="vlog-cat-8">Technology</a>
-                                            </span>
-                                                            <h2 className="entry-title h2">
-                                                                <a href="#">Take advantage of different weather
-                                                                    forecasts</a>
-                                                            </h2>
-                                                            <div className="entry-meta">
-                                                                <div className="meta-item meta-date">
-                                                                    <span
-                                                                        className="updated meta-icon">2 days ago</span>
-                                                                </div>
-                                                                <div className="meta-item meta-comments">
-                                                                    <a href="#">2 comments</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="entry-content">
-                                                            <p>Completely re-engineer go forward platforms and fully
-                                                                tested process
-                                                                improvements. Professionally mesh quality synergy via
-                                                                diverse
-                                                                potentialities. Competently benchmark...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-                                            <article
-                                                className="vlog-lay-b lay-horizontal vlog-post post-92 post type-post status-publish format-gallery has-post-thumbnail hentry category-technology tag-magazine tag-video post_format-post-format-gallery">
-                                                <div className="row">
-                                                    <div className="col-lg-6 col-md-6  col-sm-6 col-xs-12">
-                                                        <div className="entry-image">
-                                                            <a href="#"
-                                                               title="Take advantage of different weather forecasts">
-                                                                <img src={Blog_2}
-                                                                     className="attachment-vlog-lay-b size-vlog-lay-b wp-post-image"
-                                                                     alt="img"/>
-                                                                <div className="vlog-labels medium">
-                                                                    <span className="vlog-format-label">Gallery</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                        <div className="entry-header">
-                                            <span className="entry-category">
-                                                <a href="#" className="vlog-cat-8">Technology</a>
-                                            </span>
-                                                            <h2 className="entry-title h2">
-                                                                <a href="#">Take advantage of different weather
-                                                                    forecasts</a>
-                                                            </h2>
-                                                            <div className="entry-meta">
-                                                                <div className="meta-item meta-date">
-                                                                    <span
-                                                                        className="updated meta-icon">2 days ago</span>
-                                                                </div>
-                                                                <div className="meta-item meta-comments">
-                                                                    <a href="#">2 comments</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="entry-content">
-                                                            <p>Completely re-engineer go forward platforms and fully
-                                                                tested process
-                                                                improvements. Professionally mesh quality synergy via
-                                                                diverse
-                                                                potentialities. Competently benchmark...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-
-                                            <article
-                                                className="vlog-lay-b lay-horizontal vlog-post post-92 post type-post status-publish format-gallery has-post-thumbnail hentry category-technology tag-magazine tag-video post_format-post-format-gallery">
-                                                <div className="row">
-                                                    <div className="col-lg-6 col-md-6  col-sm-6 col-xs-12">
-                                                        <div className="entry-image">
-                                                            <a href="#"
-                                                               title="Take advantage of different weather forecasts">
-                                                                <img src={Blog_2}
-                                                                     className="attachment-vlog-lay-b size-vlog-lay-b wp-post-image"
-                                                                     alt="img"/>
-                                                                <div className="vlog-labels medium">
-                                                                    <span className="vlog-format-label">Gallery</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                        <div className="entry-header">
-                                            <span className="entry-category">
-                                                <a href="#" className="vlog-cat-8">Technology</a>
-                                            </span>
-                                                            <h2 className="entry-title h2">
-                                                                <a href="#">Take advantage of different weather
-                                                                    forecasts</a>
-                                                            </h2>
-                                                            <div className="entry-meta">
-                                                                <div className="meta-item meta-date">
-                                                                    <span
-                                                                        className="updated meta-icon">2 days ago</span>
-                                                                </div>
-                                                                <div className="meta-item meta-comments">
-                                                                    <a href="#">2 comments</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="entry-content">
-                                                            <p>Completely re-engineer go forward platforms and fully
-                                                                tested process
-                                                                improvements. Professionally mesh quality synergy via
-                                                                diverse
-                                                                potentialities. Competently benchmark...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                className="vlog-lay-b lay-horizontal vlog-post post-92 post type-post status-publish format-gallery has-post-thumbnail hentry category-technology tag-magazine tag-video post_format-post-format-gallery">
-                                                <div className="row">
-                                                    <div className="col-lg-6 col-md-6  col-sm-6 col-xs-12">
-                                                        <div className="entry-image">
-                                                            <a href="#"
-                                                               title="Take advantage of different weather forecasts">
-                                                                <img src={Blog_2}
-                                                                     className="attachment-vlog-lay-b size-vlog-lay-b wp-post-image"
-                                                                     alt="img"/>
-                                                                <div className="vlog-labels medium">
-                                                                    <span className="vlog-format-label">Gallery</span>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-
-                                                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                        <div className="entry-header">
-                                            <span className="entry-category">
-                                                <a href="#" className="vlog-cat-8">Technology</a>
-                                            </span>
-                                                            <h2 className="entry-title h2">
-                                                                <a href="#">Take advantage of different weather
-                                                                    forecasts</a>
-                                                            </h2>
-                                                            <div className="entry-meta">
-                                                                <div className="meta-item meta-date">
-                                                                    <span
-                                                                        className="updated meta-icon">2 days ago</span>
-                                                                </div>
-                                                                <div className="meta-item meta-comments">
-                                                                    <a href="#">2 comments</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="entry-content">
-                                                            <p>Completely re-engineer go forward platforms and fully
-                                                                tested process
-                                                                improvements. Professionally mesh quality synergy via
-                                                                diverse
-                                                                potentialities. Competently benchmark...</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
                                         </div>
 
                                         <nav className="vlog-pagination">
