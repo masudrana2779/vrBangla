@@ -25,7 +25,21 @@ export default class Home extends Component {
             autoplay: true,
             arrows: true,
             fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                    }
+                }
+            ]
         };
         return (
             <Fragment>
