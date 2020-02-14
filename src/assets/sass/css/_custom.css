@@ -1,0 +1,152 @@
+
+.vrFeaturedSlider_wrap {
+
+}
+
+.vrFeaturedSlider_wrap .vrSlider_content {
+
+}
+
+.vrSlider {
+}
+.vrSlider .slick-prev, .vrSlider .slick-next {
+    font-size: 42px;
+    z-index: 1;
+}
+.vrSlider .slick-prev {
+    left: 100px;
+}
+.vrSlider .slick-next {
+    right: 100px;
+}
+.vrSlider .slick-prev:before {
+    content: "\f104";
+    font-family: 'FontAwesome';
+    font-size: 42px;
+}
+
+.vrSlider .slick-next:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-size: 42px;
+}
+
+.vrSlider .vrSlider_item {
+}
+
+.vlog_featured_item {
+}
+
+.vlog_cover_bg {
+}
+
+.vrSlider .vlog_cover {
+    text-align: center;
+    position: relative;
+    display: inline-table;
+    overflow: hidden;
+}
+
+.vrSlider .vlog_cover:after, .vrSlider .vlog_cover:before {
+    content: "";
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+}
+
+.vrSlider .vlog_cover:before {
+    left: 0;
+    background: -moz-linear-gradient(left,#000 0,rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left,#000 0,rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(linear,left top,right top,from(#000),to(rgba(0,0,0,0)));
+    background: linear-gradient(to right,#000 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+}
+
+.vrSlider .vlog_cover:after {
+    right: 0;
+    background: -moz-linear-gradient(left,rgba(0,0,0,0) 0,#000 100%);
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,#000 100%);
+    background: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(#000));
+    background: linear-gradient(to right,rgba(0,0,0,0) 0,#000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
+}
+
+.vrSlider .vlog_cover .attachment_vlog_cover_full {
+    display: inline-block;
+}
+
+.vlog_format_action {
+    top: 50%;
+    left: 50%;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    margin-left: -45px;
+    margin-top: -45px;
+    padding: 27px 0 0 7px;
+    position: absolute;
+    line-height: 1;
+    outline: 0;
+    z-index: 5;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-animation: pulseicon .7s alternate ease-in-out infinite;
+    animation: pulseicon .7s alternate ease-in-out infinite;
+
+}
+
+.vlog_format_action i {
+    color: #FFF;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    font-size: 32px;
+}
+
+.f_logo {
+    max-width: 100px;
+    width: 100%;
+}
+
+@media (max-width: 767px){
+    .vrSlider .vlog_cover_bg {
+        height: 250px!important;
+        margin: 0;
+    }
+    .vlog_cover {
+        display: inline-table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .vrSlider .vlog_cover .attachment_vlog_cover_full {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .hidden-xs {
+        display: block !important;
+    }
+    li.vlog-actions-button.vlog-watch-later,
+    li.vlog-actions-button.vlog-social-icons {
+        display: none;
+    }
+    .vlog-header-middle .site-title img {
+        max-height: 70px;
+        margin: 0;
+    }
+}

@@ -1,7 +1,9 @@
 import React, {Component, Fragment} from "react";
 import {Route, Switch} from "react-router-dom";
-import "../assets/css/live.css";
-import "../assets/css/main.css";
+// import "../assets/css/live.css";
+// import "../assets/css/main.css";
+
+import "../assets/sass/main.scss";
 
 import {details, home} from "../utils/routes";
 import Home from "./home/Home";
