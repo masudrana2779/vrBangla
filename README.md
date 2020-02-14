@@ -3,7 +3,7 @@ VR Bangla
 
 ### Custom by RANA
 
-for style missing try to solve to import main.scss file
+for style missing Online try to solve by import main.scss file
 
 ```scss
 
