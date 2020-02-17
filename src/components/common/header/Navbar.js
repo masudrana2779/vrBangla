@@ -3,9 +3,22 @@ import {Link} from "react-router-dom";
 import Logo from "../../../assets/img/logo.jpeg";
 
 export class Navbar extends Component {
+
+
     render() {
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
         return (
-            <header id="header" className="vlog-site-header vlog-header-shadow hidden-xs hidden-sm">
+            <header id="header" className="vlog-site-header vlog-header-shadow hidden-xs hidden-sm"  id="header">
                 <div className="vlog-header-wrapper">
                     <div className="container">
                         <div className="vlog-header-1 vlog-header-middle">
@@ -26,6 +39,12 @@ export class Navbar extends Component {
                                         </li>
                                         <li className="menu-item">
                                             <Link to={"/details"}>Details</Link>
+                                        </li>
+                                        <li className="menu-item">
+                                            <Link to={"/about"}>About</Link>
+                                        </li>
+                                        <li className="menu-item">
+                                            <Link to={"/contact"}>Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>

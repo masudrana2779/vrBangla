@@ -119,6 +119,12 @@
     width: 100%;
 }
 
+#header {
+    z-index: 10;
+    position: sticky;
+    transition: top 0.3s;
+}
+
 @media (max-width: 767px){
     .vrSlider .vlog_cover_bg {
         height: 250px!important;

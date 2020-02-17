@@ -5,12 +5,14 @@ import {Route, Switch} from "react-router-dom";
 
 import "../assets/sass/main.scss";
 
-import {details, home} from "../utils/routes";
+import {about, contact, details, home} from "../utils/routes";
 import Home from "./home/Home";
 
 import Navbar from "./common/header/Navbar";
 import Footer from "./common/footer/Footer";
 import Details from "./Details/details";
+import Contact from "./contact/contact";
+import About from "./about/about";
 
 class App extends Component {
     render() {
@@ -20,6 +22,8 @@ class App extends Component {
                 <Switch>
                     <Route path={home} component={Home} exact></Route>
                     <Route path={details} component={Details} exact></Route>
+                    <Route path={contact} component={Contact} exact></Route>
+                    <Route path={about} component={About} exact></Route>
                 </Switch>
                 <Footer/>
             </Fragment>
