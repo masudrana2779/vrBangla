@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../../../assets/img/logo.jpeg";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
-export class NavbarMenu extends Component {
+export class MainMenu extends Component {
 
 
     render() {

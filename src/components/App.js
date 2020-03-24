@@ -8,7 +8,7 @@ import "../assets/sass/main.scss";
 import {about, contact, details, home} from "../utils/routes";
 import Home from "./home/Home";
 
-import NavbarMenu from "./common/header/Navbar";
+import MainMenu from "./common/header/mainMenu";
 import Footer from "./common/footer/Footer";
 import Details from "./Details/details";
 import Contact from "./contact/contact";
@@ -18,7 +18,7 @@ class App extends Component {
     render() {
         return (
             <Fragment>
-                <NavbarMenu/>
+                <MainMenu/>
                 <Switch>
                     <Route path={home} component={Home} exact></Route>
                     <Route path={details} component={Details} exact></Route>
