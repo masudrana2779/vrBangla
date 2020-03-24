@@ -1,77 +1,172 @@
+#header {
 
-.vrFeaturedSlider_wrap {
 
+    .vlog-header-middle .site-title img {
+        border-radius: 50%;
+    }
+
+    .vlog-header-wrapper {
+        padding: 10px 0;
+    }
+
+    .vlog-slot-l {
+        position: static;
+    }
+
+    .vlog-slot-r {
+        top: 10px;
+    }
+
+    .vlog-header-middle {
+        height: auto;
+    }
+
+    .navbar {
+        padding   : 0;
+        background: transparent !important;
+    }
+
+    .navbar-toggler {
+        width       : 30px;
+        height      : 20px;
+        position    : relative;
+        padding     : 0;
+        border      : none;
+        margin-right: 70px;
+        border      : none;
+        outline     : none;
+        box-shadow  : none;
+
+        &:focus {
+            outline   : none;
+            box-shadow: none;
+
+        }
+
+        .bar {
+            position          : absolute;
+            left              : 0;
+            width             : 100%;
+            height            : 2px;
+            background        : #000;
+            display           : block;
+            -webkit-transition: all 0.5s;
+            -ms-transition    : all 0.5s;
+            transition        : all 0.5s;
+
+            &:nth-child(1) {
+                top              : 50%;
+                -webkit-transform: rotate(45deg);
+                -ms-transform    : rotate(45deg);
+                transform        : rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                top              : 50%;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform    : rotate(-45deg);
+                transform        : rotate(-45deg);
+            }
+        }
+
+        &.collapsed {
+            .bar {
+                -webkit-transform: none;
+                -ms-transform    : none;
+                transform        : none;
+
+                &:nth-child(1) {
+                    top: 0;
+                }
+
+                &:nth-child(2) {
+                    top    : 50%;
+                    opacity: 1;
+                }
+
+                &:nth-child(3) {
+                    top: 100%;
+                }
+            }
+        }
+    }
 }
 
-.vrFeaturedSlider_wrap .vrSlider_content {
+.vrFeaturedSlider_wrap {}
 
-}
+.vrFeaturedSlider_wrap .vrSlider_content {}
 
-.vrSlider {
-}
-.vrSlider .slick-prev, .vrSlider .slick-next {
+.vrSlider {}
+
+.vrSlider .slick-prev,
+.vrSlider .slick-next {
     font-size: 42px;
-    z-index: 1;
+    z-index  : 1;
 }
+
 .vrSlider .slick-prev {
     left: 100px;
 }
+
 .vrSlider .slick-next {
     right: 100px;
 }
+
 .vrSlider .slick-prev:before {
-    content: "\f104";
+    content    : "\f104";
     font-family: 'FontAwesome';
-    font-size: 42px;
+    font-size  : 42px;
 }
 
 .vrSlider .slick-next:before {
-    content: "\f105";
+    content    : "\f105";
     font-family: 'FontAwesome';
-    font-size: 42px;
+    font-size  : 42px;
 }
 
-.vrSlider .vrSlider_item {
-}
+.vrSlider .vrSlider_item {}
 
-.vlog_featured_item {
-}
+.vlog_featured_item {}
 
-.vlog_cover_bg {
-}
+.vlog_cover_bg {}
 
 .vrSlider .vlog_cover {
     text-align: center;
-    position: relative;
-    display: inline-table;
-    overflow: hidden;
+    position  : relative;
+    display   : inline-table;
+    overflow  : hidden;
 }
 
-.vrSlider .vlog_cover:after, .vrSlider .vlog_cover:before {
-    content: "";
-    top: 0;
+.vrSlider .vlog_cover:after,
+.vrSlider .vlog_cover:before {
+    content : "";
+    top     : 0;
     position: absolute;
-    height: 100%;
-    width: 15%;
-    z-index: 2;
+    height  : 100%;
+    width   : 15%;
+    z-index : 2;
 }
 
 .vrSlider .vlog_cover:before {
-    left: 0;
-    background: -moz-linear-gradient(left,#000 0,rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(left,#000 0,rgba(0,0,0,0) 100%);
-    background: -webkit-gradient(linear,left top,right top,from(#000),to(rgba(0,0,0,0)));
-    background: linear-gradient(to right,#000 0,rgba(0,0,0,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+    left      : 0;
+    background: -moz-linear-gradient(left, #000 0, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(left, #000 0, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#000), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to right, #000 0, rgba(0, 0, 0, 0) 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
 }
 
 .vrSlider .vlog_cover:after {
-    right: 0;
-    background: -moz-linear-gradient(left,rgba(0,0,0,0) 0,#000 100%);
-    background: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,#000 100%);
-    background: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0)),to(#000));
-    background: linear-gradient(to right,rgba(0,0,0,0) 0,#000 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
+    right     : 0;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #000 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #000 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#000));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, #000 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
 }
 
 .vrSlider .vlog_cover .attachment_vlog_cover_full {
@@ -79,80 +174,146 @@
 }
 
 .vlog_format_action {
-    top: 50%;
-    left: 50%;
-    border: 2px solid #FFF;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 90px;
-    width: 90px;
-    margin-left: -45px;
-    margin-top: -45px;
-    padding: 27px 0 0 7px;
-    position: absolute;
-    line-height: 1;
-    outline: 0;
-    z-index: 5;
-    background: rgba(0, 0, 0, .5);
-    text-align: center;
+    top                    : 50%;
+    left                   : 50%;
+    border                 : 2px solid #FFF;
+    border-radius          : 50%;
+    cursor                 : pointer;
+    height                 : 90px;
+    width                  : 90px;
+    margin-left            : -45px;
+    margin-top             : -45px;
+    padding                : 27px 0 0 7px;
+    position               : absolute;
+    line-height            : 1;
+    outline                : 0;
+    z-index                : 5;
+    background             : rgba(0, 0, 0, .5);
+    text-align             : center;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    -webkit-animation: pulseicon .7s alternate ease-in-out infinite;
-    animation: pulseicon .7s alternate ease-in-out infinite;
+    -webkit-transition     : all .2s ease-in-out;
+    -moz-transition        : all .2s ease-in-out;
+    -ms-transition         : all .2s ease-in-out;
+    -o-transition          : all .2s ease-in-out;
+    transition             : all .2s ease-in-out;
+    -webkit-animation      : pulseicon .7s alternate ease-in-out infinite;
+    animation              : pulseicon .7s alternate ease-in-out infinite;
 
 }
 
 .vlog_format_action i {
-    color: #FFF;
+    color     : #FFF;
     text-align: center;
-    z-index: 2;
-    position: relative;
-    font-size: 32px;
+    z-index   : 2;
+    position  : relative;
+    font-size : 32px;
 }
 
 .f_logo {
-    max-width: 100px;
-    width: 100%;
+    max-width    : 100px;
+    width        : 100%;
+    border-radius: 50%;
 }
 
 #header {
-    z-index: 10;
-    position: sticky;
+    z-index   : 10;
+    position  : sticky;
     transition: top 0.3s;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .vrSlider .vlog_cover_bg {
-        height: 250px!important;
+        height: 250px !important;
         margin: 0;
     }
+
     .vlog_cover {
-        display: inline-table;
+        display : inline-table;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        height  : 100%;
     }
+
     .vrSlider .vlog_cover .attachment_vlog_cover_full {
-        width: 100%;
-        height: 100%;
+        width        : 100%;
+        height       : 100%;
         -o-object-fit: cover;
-        object-fit: cover;
+        object-fit   : cover;
     }
+
     .hidden-xs {
         display: block !important;
     }
+
     li.vlog-actions-button.vlog-watch-later,
     li.vlog-actions-button.vlog-social-icons {
         display: none;
     }
+
     .vlog-header-middle .site-title img {
         max-height: 70px;
-        margin: 0;
+        margin    : 0;
+    }
+
+    .widget {
+        max-width: 100%;
+    }
+
+    .vlog-related-wrapper .vlog-module article:last-child,
+    .vlog-sidebar,
+    .widget {
+        margin-bottom: 30px;
+    }
+
+    .video_area {
+        display: block;
+    }
+
+    .video-left {
+        float: none;
+        width: 100%;
+    }
+
+    .video-left .video-inner {
+        margin : 0;
+        padding: 50px 30px;
+    }
+
+    .video_area .video-right {
+        width: 100%;
+    }
+
+    .videoWrapper {
+        height: 350px;
+    }
+
+    .oppi_contact_banner {
+        padding: 70px 0;
+    }
+
+    .oppi_contact_banner .oppi_banner_content .banner_title {
+        font-size  : 40px;
+        line-height: 56px;
+    }
+
+    .oppi_contactUs_wrap {
+        padding: 60px 0 0px;
+    }
+
+    .oppi_contact_item {
+        max-width    : 100%;
+        margin-bottom: 60px;
+    }
+
+    .oppi_contact_form_group {
+        padding: 20px;
+        margin : 0;
+    }
+
+    .about_banner_area {
+        padding-top   : 180px;
+        padding-bottom: 40px;
     }
 }
