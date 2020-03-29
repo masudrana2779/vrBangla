@@ -11,6 +11,7 @@ import Blog_1 from "../../assets/img/featured/blog_1.jpg";
 import Blog_2 from "../../assets/img/blog/blog-2.jpg";
 import Featured from "../common/featured/featured";
 import LatestVideo from "../common/latestVideo/latestVideo";
+import {YouWillLoveVRBangla} from "../common/YouWillLoveVRBangla";
 
 
 export default class Home extends Component {
@@ -104,34 +105,7 @@ export default class Home extends Component {
                             </div>
                         </div>
                     </div>
-
-                    <div className="vlog-section vlog-no-sid vlog-bg ">
-                        <div className="container">
-                            <div className="vlog-content">
-                                <div className="row row-eq-height">
-                                    <div className="vlog-module module-text col-lg-12 col-md-12 col-sm-12 col-xs-12 "
-                                         id="vlog-module-1-0">
-                                        <div className="vlog-txt-module">
-                                            <div className="text-center">
-                                                <h2>You will love Vlog</h2>
-                                                <p>Vlog is a carefully crafted WordPress theme with a focus on your
-                                                    video content. It
-                                                    will suit the needs of any personal video blog, all the way to
-                                                    complex magazine
-                                                    websites. Whether you need a website for video blogging, video
-                                                    tutorials and lessons
-                                                    or any sort of viral video sharing, Vlog is the perfect choice.
-                                                    YouTube, Vimeo,
-                                                    Dailymotion and other common video content never looked better!</p>
-                                                <a className="vlog-button" href="#">Read More </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <YouWillLoveVRBangla/>
                     <div className="vlog-section">
                         <div className="container">
                             <div className="vlog-content">

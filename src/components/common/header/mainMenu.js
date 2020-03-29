@@ -130,4 +130,4 @@ export class MainMenu extends Component {
     }
 }
 
-export default NavbarMenu;
+export default MainMenu;
