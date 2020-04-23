@@ -2,6 +2,12 @@ import React, {Component} from 'react'
 import FooterLogo from "../../../assets/img/logo.jpeg";
 import MostViewFooter from "../mostView/mostViewFooter";
 
+import Blog_1 from "../../../assets/img/featured/blog_1.jpg";
+import nabaratnaMondir from "../../../assets/img/featured/nabaratna mondir_01437.jpg";
+import Cover from "../../../assets/img/featured/Cover.jpg";
+import VR_BANGLA_LOGO from "../../../assets/img/featured/VR_BANGLA_LOGO.jpg";
+import DJI_0689_01972 from "../../../assets/img/featured/DJI_0689_01972.jpg";
+
 export class Footer extends Component {
     render() {
         return (
@@ -14,15 +20,16 @@ export class Footer extends Component {
                                     <p
                                     ><img src={FooterLogo} className="f_logo" alt="Vlog WordPress Theme"/>
                                     </p>
-                                    <p>Vlog is a carefully crafted WordPress theme with a focus on your video content.
-                                        It will suit
-                                        the needs of any personal video blog, all the way to complex magazine websites.
-                                        Whether you
-                                        need a website for video blogging, video tutorials and lessons or any sort of
-                                        viral video
-                                        sharing, Vlog is the perfect choice. YouTube, Vimeo, Dailymotion and other
-                                        common video
-                                        content never looked better!</p>
+                                    <p>VR Bangla is the first VR 360 content channel from Bangladesh with a vision to
+                                        take Bangladeshi culture
+                                        to the world with the latest technology of communications and infotainment.
+                                        Initially the channel is
+                                        starting with few categories of infotainment VR content that represents
+                                        Bangladesh. So it will definitely
+                                        offer you the opportunity to enjoy the real experience of culture and heritage
+                                        of Bangladesh.
+                                        Gradually more content categories are coming to expand the horizon of VR
+                                        Bangla.</p>
 
                                     <a href="#" className="vlog-button">Find out more</a>
                                 </div>
@@ -33,9 +40,9 @@ export class Footer extends Component {
                                 <h4 className="widget-title h5"><span>Most Viewed</span>
                                 </h4>
                                 <div className="row ">
-                                    <MostViewFooter />
-                                    <MostViewFooter />
-                                    <MostViewFooter />
+                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
                                 </div>
                             </div>
                         </div>
@@ -43,9 +50,9 @@ export class Footer extends Component {
                             <div id="vlog_posts_widget-9" className="widget vlog_posts_widget">
                                 <h4 className="widget-title h5"><span>Most Discussed</span></h4>
                                 <div className="row ">
-                                    <MostViewFooter />
-                                    <MostViewFooter />
-                                    <MostViewFooter />
+                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
                                 </div>
 
 
@@ -57,7 +64,7 @@ export class Footer extends Component {
                 <div className="vlog-copyright">
                     <div className="container">
                         <p className="text-center">Copyright © 2020. Created by <a href="#"
-                                                                                      target="_blank">GO Bangla</a>.</p>
+                                                                                   target="_blank">GO Bangla</a>.</p>
                     </div>
                 </div>
             </footer>

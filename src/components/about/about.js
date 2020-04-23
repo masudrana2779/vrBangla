@@ -20,11 +20,11 @@ class About extends Component {
                     <div className="video-left">
                         <div className="video-inner">
                             <div className="title-four">
-                                <h2>Discover The New App</h2>
+                                <h2>Unframed. Unlimited.</h2>
                                 <div className="br"></div>
                             </div>
-                            <p>Retarget past customers with second-chance offers and reach new audiences with
-                                geo-targeted campaigns during peak dining times using Forks’ push notifications.</p>
+                            <p>It’s time to break all the frames and go unlimited. VR 360 video gives you the freedom of looking around
+                                and experience 360 degree. VR Bangla is the gateway to your freedom of viewing experience.</p>
                             <button className="play-btn">Play the video</button>
                         </div>
                     </div>

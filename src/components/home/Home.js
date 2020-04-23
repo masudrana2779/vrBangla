@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider_1 from "../../assets/img/slider/slider-1.jpg";
 import Slider_2 from "../../assets/img/slider/slider-2.jpg";
 import Blog_1 from "../../assets/img/featured/blog_1.jpg";
+import nabaratnaMondir from "../../assets/img/featured/nabaratna mondir_01437.jpg";
+import Cover from "../../assets/img/featured/Cover.jpg";
+import VR_BANGLA_LOGO from "../../assets/img/featured/VR_BANGLA_LOGO.jpg";
+import DJI_0689_01972 from "../../assets/img/featured/DJI_0689_01972.jpg";
 import Blog_2 from "../../assets/img/blog/blog-2.jpg";
 import Featured from "../common/featured/featured";
 import LatestVideo from "../common/latestVideo/latestVideo";
@@ -93,12 +97,17 @@ export default class Home extends Component {
                                             </div>
                                         </div>
                                         <div className="row vlog-cats row-eq-height ">
-                                            <Featured/>
-                                            <Featured/>
-                                            <Featured/>
-                                            <Featured/>
-                                            <Featured/>
-                                            <Featured/>
+                                            <Featured imgSrc={nabaratnaMondir}
+                                                      title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                            <Featured imgSrc={VR_BANGLA_LOGO}
+                                                      title={'সুন্দরবন ১ ।। Sundarban VR Tour'}/>
+                                            <Featured imgSrc={Blog_1}
+                                                      title={'শুটিং ফ্লোর-১: ‘শিরোনামহীন’ - ’ক্যাফেটারিয়া পেরিয়ে’'}/>
+                                            <Featured imgSrc={DJI_0689_01972}
+                                                      title={'দুবলহাটি রাজবাড়ী ।। Dubolhati Rajbari VR Tour'}/>
+                                            <Featured imgSrc={Cover} title={'সহজপাঠে বসন্তবরণ'}/>
+                                            <Featured imgSrc={DJI_0689_01972}
+                                                      title={'শুটিং ফ্লোর-১: ‘শিরোনামহীন’ - ’ক্যাফেটারিয়া পেরিয়ে’'}/>
                                         </div>
                                     </div>
                                 </div>
@@ -121,10 +130,24 @@ export default class Home extends Component {
 
                                         <div className="row vlog-posts row-eq-height ">
 
-                                            <LatestVideo/>
-                                            <LatestVideo/>
-                                            <LatestVideo/>
-                                            <LatestVideo/>
+                                            <LatestVideo imgSrc={nabaratnaMondir}
+                                                         title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}
+                                                         type={'GALLERY'}
+                                                         description={'ভার্চুয়াল রিয়্যালিটি ৩৬০ ভিডিও আমাদের দেশে নতুন। আর এই নতুন মাধ্যম নিয়েই আমরা আরেকটি নতুন যাত্রা শুরু করলাম, যার নাম VR Bangla.'}/>
+                                            <LatestVideo imgSrc={VR_BANGLA_LOGO}
+                                                         title={'শুটিং ফ্লোর-১: ‘শিরোনামহীন’ - ’ক্যাফেটারিয়া পেরিয়ে’'}
+                                                         type={'GALLERY'}
+                                                         description={'ভার্চুয়াল রিয়্যালিটি ৩৬০ ভিডিও আমাদের দেশে নতুন। আর এই নতুন মাধ্যম নিয়েই আমরা আরেকটি নতুন যাত্রা শুরু করলাম, যার নাম VR Bangla.'}/>
+                                            <LatestVideo imgSrc={Cover}
+                                                         title={'সুন্দরবন ১ ।। Sundarban VR Tour'}
+                                                         type={'GALLERY'}
+                                                         description={'ভার্চুয়াল রিয়্যালিটি ৩৬০ ভিডিও আমাদের দেশে নতুন। আর এই নতুন মাধ্যম নিয়েই আমরা আরেকটি নতুন যাত্রা শুরু করলাম, যার নাম VR Bangla.'}/>
+                                            <LatestVideo
+                                                imgSrc={DJI_0689_01972}
+                                                title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}
+                                                type={'GALLERY'}
+                                                description={'ভার্চুয়াল রিয়্যালিটি ৩৬০ ভিডিও আমাদের দেশে নতুন। আর এই নতুন মাধ্যম নিয়েই আমরা আরেকটি নতুন যাত্রা শুরু করলাম, যার নাম VR Bangla.'}/>
+
 
                                         </div>
 
