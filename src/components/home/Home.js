@@ -4,21 +4,21 @@ import YouTube from 'react-youtube';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import Slider_1 from "../../assets/img/slider/slider-1.jpg";
-import Slider_2 from "../../assets/img/slider/slider-2.jpg";
 import Blog_1 from "../../assets/img/featured/blog_1.jpg";
 import nabaratnaMondir from "../../assets/img/featured/nabaratna mondir_01437.jpg";
 import Cover from "../../assets/img/featured/Cover.jpg";
 import VR_BANGLA_LOGO from "../../assets/img/featured/VR_BANGLA_LOGO.jpg";
 import DJI_0689_01972 from "../../assets/img/featured/DJI_0689_01972.jpg";
-import Blog_2 from "../../assets/img/blog/blog-2.jpg";
 import Featured from "../common/featured/featured";
 import LatestVideo from "../common/latestVideo/latestVideo";
 import {YouWillLoveVRBangla} from "../common/YouWillLoveVRBangla";
+import SliderItem from "../common/slider/Slider";
 
 
 export default class Home extends Component {
+    constructor(props) {
+        super(props);
+    }
 
     render() {
 
@@ -55,30 +55,7 @@ export default class Home extends Component {
                             <div className="vrSlider_content">
                                 <div className="vlog-cover-bg">
                                     <Slider className="vrSlider" {...settings}>
-                                        <div className="vrSlider_item">
-                                            <div className="vlog_featured_item video_item">
-                                                <div className="vlog_cover_bg">
-                                                    <a className="vlog_cover" href="#" data-action="video">
-                                                        <img src={Slider_1} className="attachment_vlog_cover_full"
-                                                             alt="img"/>
-                                                        <span className="vlog_format_action large">
-                                                            <i className="fa fa-play"></i>  </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="vrSlider_item">
-                                            <div className="vlog_featured_item video_item">
-                                                <div className="vlog_cover_bg">
-                                                    <a className="vlog_cover" href="#" data-action="video">
-                                                        <img src={Slider_2} className="attachment_vlog_cover_full"
-                                                             alt="img"/>
-                                                        <span className="vlog_format_action large">
-                                                            <i className="fa fa-play"></i>  </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                         <SliderItem />
                                     </Slider>
                                 </div>
                             </div>

@@ -40,9 +40,12 @@ export class Footer extends Component {
                                 <h4 className="widget-title h5"><span>Most Viewed</span>
                                 </h4>
                                 <div className="row ">
-                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
-                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
-                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972}
+                                                    title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972}
+                                                    title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <MostViewFooter image={DJI_0689_01972}
+                                                    title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
                                 </div>
                             </div>
                         </div>
@@ -50,9 +53,10 @@ export class Footer extends Component {
                             <div id="vlog_posts_widget-9" className="widget vlog_posts_widget">
                                 <h4 className="widget-title h5"><span>Most Discussed</span></h4>
                                 <div className="row ">
-                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
-                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
-                                    <MostViewFooter image={DJI_0689_01972} title={'নবরত্ন মন্দির : Navaratna Temple VR Tour'}/>
+                                    <ul>
+                                        <li><a href="https://web.facebook.com/vrbangla360/" target="_blank"><i className="fa fa-facebook"></i> Facebook</a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCmk62XX9WHvXEAwP64RqGdw" target="_blank"><i className="fa fa-youtube"></i> Youtube</a></li>
+                                    </ul>
                                 </div>
 
 
